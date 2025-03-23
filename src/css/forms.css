@@ -1,0 +1,23 @@
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input, select, button {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}

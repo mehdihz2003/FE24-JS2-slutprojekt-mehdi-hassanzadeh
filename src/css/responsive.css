@@ -1,0 +1,27 @@
+.task-column::-webkit-scrollbar,
+#membersContainer::-webkit-scrollbar {
+    width: 6px;
+}
+
+.task-column::-webkit-scrollbar-track,
+#membersContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 6px;
+}
+
+.task-column::-webkit-scrollbar-thumb,
+#membersContainer::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+    #content-columns {
+        flex-direction: column;
+    }
+
+    .task-column {
+        width: 100%;
+        min-width: 100%;
+    }
+}
