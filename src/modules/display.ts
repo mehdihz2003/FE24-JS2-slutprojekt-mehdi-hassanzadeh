@@ -164,6 +164,6 @@ assignBtn.addEventListener('click', async event => {
         await changeTaskStatus(selectedTaskID, "in progress");
         displayAllTasks(await getAllTasks());
     } else {
-        window.alert("Role of member does not match department of task");
+        window.alert("Role of member does not match category of task");
     }
 });
