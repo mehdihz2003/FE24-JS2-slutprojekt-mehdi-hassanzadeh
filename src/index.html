@@ -12,6 +12,17 @@
 </head>
 
 <body>
+    <form id="member-form">
+        <input type="text" placeholder="Name..." required>
+
+        <select name="role" id="member-select">
+            <option value="front-end">Front-end</option>
+            <option value="back-end">Back-end</option>
+            <option value="UX-design">UX-design</option>
+        </select>
+        <button>Add Member</button>
+    </form>
+
     <form id="task-form">
         <input id="task-title" type="text" placeholder="Task Title..." required>
         <input id="task-description" type="text" placeholder="Task Description..." required>
@@ -21,38 +32,27 @@
             <option value="back-end">Back-end</option>
             <option value="UX-design">UX-design</option>
         </select>
-        <button>Add task</button>
+        <button>Add Task</button>
     </form>
-
-    <form id="member-form">
-        <input type="text" placeholder="name" required>
-
-        <select name="role" id="member-select">
-            <option value="front-end">Front-end</option>
-            <option value="back-end">Back-end</option>
-            <option value="UX-design">UX-design</option>
-        </select>
-        <button>Add member</button>
-    </form>
-
+    
     <form id="assign-form">
         <select id="assign-task-to-member-member"></select>
         <select id="assign-task-to-member-task"></select>
-        <button id="assign-task-to-member-final">Assign task to member</button>
+        <button id="assign-task-to-member-final">Assign Task To Member</button>
     </form>
 
-    <form id="filter-form"> Filter tasks by:
-        Category <select name="filter-by-category" id="category-filter">
-            <option value="all">all</option>
+    <form id="filter-form">
+        <select name="filter-by-category" id="category-filter">
+            <option value="all">All Categories</option>
             <option value="front-end">Front-end</option>
             <option value="back-end">Back-end</option>
             <option value="UX-design">UX-design</option>
         </select>
-        Member:<select name="filter-by-member" id="member-filter">
-            <option value="all">all</option>
+        <select name="filter-by-member" id="member-filter">
+            <option value="all">All Members</option>
         </select>
 
-        <label for="sort-tasks">Sort tasks by:</label>
+        <label for="sort-tasks"></label>
         <select id="sort-tasks">
             <option value="Alphabetical order (ascending)">Alphabetical order (ascending)</option>
             <option value="Alphabetical order (descending)">Alphabetical order (descending)</option>
@@ -61,7 +61,6 @@
         </select>
 
         <button id="apply-filters">Apply Filters</button>
-
     </form>
 
     <div class="columns" id="column-container">

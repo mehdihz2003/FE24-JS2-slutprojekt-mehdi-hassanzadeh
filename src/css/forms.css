@@ -21,3 +21,11 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+#task-form,
+#member-form,
+#assign-form,
+#filter-form {
+    border: 1px solid #000000;
+    border-radius: 6px;
+}
