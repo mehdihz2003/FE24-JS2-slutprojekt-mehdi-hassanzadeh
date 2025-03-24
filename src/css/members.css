@@ -1,13 +1,3 @@
-#membersContainer {
-    flex: 1;
-    border: 1px solid #ddd;
-    padding: 12px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-}
-
 #team-members-header,
 #new-tasks-header,
 #tasks-in-progress-header,
@@ -25,5 +15,5 @@
 #new-tasks-header, #new-tasks,
 #tasks-in-progress-header, #in-progress-tasks,
 #tasks-completed-header, #completed-tasks {
-    width: 25%;
+    width: 26%;
 }
