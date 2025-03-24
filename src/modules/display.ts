@@ -102,6 +102,12 @@ export function displayAllMembers(memberObj: Object) {
     const containerAllMembers = document.querySelector("#membersContainer") as HTMLDivElement;
     containerAllMembers.innerHTML = '';
     memberSelect.innerHTML = '';
+ 
+    filterMemberSelect.innerHTML = '';
+    const allOption = document.createElement('option');
+    allOption.value = "all";
+    allOption.innerText = "All";
+    filterMemberSelect.appendChild(allOption);
 
     for (const firebaseID in memberObj) {
         const member = memberObj[firebaseID];
@@ -130,7 +136,6 @@ function addMemberToFilter(id: string, name: string): void {
     option.value = name;
     option.innerText = name;
     filterMemberSelect.append(option);
-    filterMemberSelect.value = name;
 }
 
 assignBtn.addEventListener('click', async event => {
