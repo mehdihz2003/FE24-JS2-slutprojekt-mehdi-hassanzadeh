@@ -27,11 +27,11 @@
 }
 
 #new-tasks .task-card { 
-    border-left-color: #f39c12; 
+    border-left-color: #f31212; 
 }
 
 #in-progress-tasks .task-card { 
-    border-left-color: #3498db; 
+    border-left-color: #dbba34; 
 }
 
 #completed-tasks .task-card { 

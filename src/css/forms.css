@@ -26,6 +26,6 @@ button:hover {
 #member-form,
 #assign-form,
 #filter-form {
-    border: 1px solid #000000;
+    border: 2px solid #0056b3;
     border-radius: 6px;
 }
